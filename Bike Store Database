@@ -1,0 +1,31 @@
+--Create a bike store database
+
+create table bikes (id integer primary key, model text, quanity integer, price integer, quality text);
+insert into bikes values(1,'A', 10, 150, 'good');
+insert into bikes values(2,'B',20,200,'good');
+insert into bikes values(3,'C', 15, 300,'good');
+insert into bikes values(4,'D', 5, 350, 'good');
+insert into bikes values(5,'E', 25, 100, 'good');
+insert into bikes values(6, 'A', 30, 150, 'bad');
+insert into bikes values(7, 'B', 15, 125, 'bad');
+insert into bikes values(8, 'C', 20, 100, 'bad');
+insert into bikes values(9, 'D', 5, 250, 'bad');
+insert into bikes values(10, 'E', 10, 200, 'bad');
+insert into bikes values(11, 'A' , 10, 100, 'normal');
+insert into bikes values(12, 'B', 20, 250, 'normal');
+insert into bikes values(13, 'C', 5,150, 'normal');
+insert into bikes values(14, 'D', 25, 300, 'normal');
+insert into bikes values(15, 'E', 15, 50, 'normal');
+
+
+create table country(model text primary key, country text);
+insert into country values ('A','England');
+insert into country values ('B', 'United States');
+insert into country values ('C', 'Germany');
+insert into country values ('D', 'Mexico');
+insert into country values ('E', 'Denmark');
+
+SELECT * FROM bikes
+--display the database order by price (from greatest to least)
+order by price desc;
+SELECT * FROM country;
