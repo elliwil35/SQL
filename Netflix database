@@ -1,0 +1,96 @@
+This project utlized data from the following Netdlix dataset.
+
+
+SELECT people.show_id
+, people.director
+, titles.title
+, titles.type
+FROM "netflix_people" people
+LEFT JOIN "netflix_titles_info" titles
+ON people.show_id = titles.show_id
+
+SELECT count (*) 
+FROM "netflix_titles_info"
+WHERE "type"= 'Movie'
+
+SELECT max (date(date_added))
+FROM "netflix_titles_info" 
+
+SELECT title
+FROM "netflix_titles_info"
+ORDER BY title asc
+
+SELECT director
+FROM "netflix_titles_info" titles
+LEFT JOIN "netflix_people" people
+ON titles.show_id = people.show_id
+WHERE titles.title = 'The Starling'
+
+SELECT title, release_year
+FROM "netflix_titles_info"
+WHERE type='Movie'
+ORDER BY release_year asc
+LIMIT 1;
+
+
+SELECT people.show_id
+, people.director
+, titles.title
+, titles.type
+FROM "netflix_people" people
+LEFT JOIN "netflix_titles_info" titles
+ON people.show_id = titles.show_id
+
+SELECT count (*) 
+FROM "netflix_titles_info"
+WHERE "type"= 'Movie'
+
+SELECT max (date(date_added))
+FROM "netflix_titles_info" 
+
+SELECT title
+FROM "netflix_titles_info"
+ORDER BY title asc
+
+SELECT director
+FROM "netflix_titles_info" titles
+LEFT JOIN "netflix_people" people
+ON titles.show_id = people.show_id
+WHERE titles.title = 'The Starling'
+
+SELECT title, release_year
+FROM "netflix_titles_info"
+WHERE type='Movie'
+ORDER BY release_year asc
+LIMIT 1;
+
+SELECT people.show_id
+, people.director
+, titles.title
+, titles.type
+FROM "netflix_people" people
+LEFT JOIN "netflix_titles_info" titles
+ON people.show_id = titles.show_id
+
+SELECT count (*) 
+FROM "netflix_titles_info"
+WHERE "type"= 'Movie'
+
+SELECT max (date(date_added))
+FROM "netflix_titles_info" 
+
+SELECT title
+FROM "netflix_titles_info"
+ORDER BY title asc
+
+SELECT director
+FROM "netflix_titles_info" titles
+LEFT JOIN "netflix_people" people
+ON titles.show_id = people.show_id
+WHERE titles.title = 'The Starling'
+
+SELECT title, release_year
+FROM "netflix_titles_info"
+WHERE type='Movie'
+ORDER BY release_year asc
+LIMIT 1;
