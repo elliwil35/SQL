@@ -1,0 +1,29 @@
+#In this SQL, I'm querying a database with multiple tables in it to explore the ratings, genres, and the box office performances of the popular movies.
+
+First I wanted to see the top 10 movies based on IMDB rating
+
+SELECT * FROM imdb
+ORDER BY rating desc LIMIT 10
+
+Then I wanted to see movies that had a metacritic score of 80 or above
+
+SELECT * imdb
+WHERE Metacritic > 80
+
+I explore another table in the dataset which contain the different movie genre.
+
+SELECT * FROM genre
+
+Then I wanted to see what the title of movie, the rating of the movie and the genre of the movie.
+
+SELECT title,rating,genre
+FROM imdb
+INNER JOIN genre ON imdb.movie_id = genre.Movie_id
+
+Finally, I wanted to see the top 10 movies based on the earnings worldwide. 
+
+
+SELECT title, worldwide
+FROM imdb
+LEFT JOIN earning ON imdb.movie_id = earning.Movie_id
+ORDER BY worldwide desc LIMIT 10
