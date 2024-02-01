@@ -1,0 +1,25 @@
+/* Created a Basketball Store Database
+
+
+
+
+CREATE TABLE basketball_store ( product_id INTEGER PRIMARY KEY, name TEXT, price INTEGER, Brand TEXT, quantity INTEGER);
+
+INSERT INTO basketball_store VALUES ( 1, "Zoom Freak 4 shoes", 99.99, "Nike" , 157);
+INSERT INTO basketball_store VALUES ( 2, "AE 1 New Wave shoes", 100 , "Adidas", 100);
+INSERT INTO basketball_store VALUES (3, "Retro 4 shoes", 210, "Jordan",50);
+INSERT INTO basketball_store VALUES (4,"MB1 BCA shoes", 125, "Puma", 95);
+INSERT INTO basketball_store VALUES (5, "Curry 1", 150, "Under Armour", 75);
+INSERT INTO basketball_store VALUES ( 6, "Melo Rare T-Shirt", 19.99, "Puma", 80);
+Insert INTO basketball_store VALUES ( 7, "Jumpman Crew T-Shirt", 29.99, "Jordan",15);
+INSERT INTO basketball_store VALUES ( 8, "Lakers Player Drive T-Shirt", 39.99, "Pro Standard", 55);
+INSERT INTO basketball_store VALUES (9, "NBA City Edition T-Shirt", 14.99, "Nike", 10);
+INSERT INTO basketball_store VALUES (10, "Vintage Basketball T-Shirt", 14.99, "RipNDip", 100);
+INSERT INTO basketball_store VALUES( 11, "Fastbreak 11 shorts", 9.99, "Nike", 250);
+INSERT INTO basketball_store VALUES (12, "Knicks Mesh shorts", 29.99 , "Pro Standard", 300);
+INSERT INTO basketball_store VALUES ( 13, "76ers team shorts", 80, "Mitchell & Ness", 95);
+INSERT INTO basketball_store VALUES ( 14, "Legends three stripes shorts", 35, "Adidas", 85);
+INSERT INTO basketball_store VALUES ( 15, "NBA Statement shorts", 80, "Jordan", 45);
+
+SELECT * FROM basketball_store ORDER BY price;
+SELECT sum(quantity) FROM basketball_store ORDER BY price;
